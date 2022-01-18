@@ -1,0 +1,700 @@
+                                                            * {
+                                                                margin: 0;
+                                                                padding: 0;
+                                                                box-sizing: border-box;
+                                                                font-weight: 400;
+                                                                font-size: .96rem;
+                                                                line-height: 1.8;
+                                                            }
+                                                            
+                                                            a {
+                                                                text-decoration: none;
+                                                            }
+                                                            
+                                                            li {
+                                                                list-style: none;
+                                                            }
+                                                            /* end default */
+                                                            /* start first-page */
+                                                            
+                                                            .first-page {
+                                                                background-image: url('../img/first-page-background1-img.webp');
+                                                                z-index: 1;
+                                                                background-position: 100% 0px;
+                                                                background: cover;
+                                                                height: 700px;
+                                                                position: relative;
+                                                                /*  100% */
+                                                            }
+                                                            
+                                                            .aactive {
+                                                                color: #ffcd38 !important;
+                                                            }
+                                                            
+                                                            .overlay {
+                                                                z-index: -1;
+                                                                content: "";
+                                                                position: absolute;
+                                                                top: 0;
+                                                                left: 0;
+                                                                right: 0;
+                                                                bottom: 0;
+                                                                background: #000;
+                                                                opacity: .3;
+                                                            }
+                                                            
+                                                            .slider-item {
+                                                                background-size: cover;
+                                                                background-repeat: no-repeat;
+                                                                background-position: top center;
+                                                                height: calc(100vh);
+                                                                min-height: 700px;
+                                                                position: relative;
+                                                            }
+                                                            
+                                                            .navbar {
+                                                                position: relative;
+                                                                font-family: "Roboto Mono";
+                                                                padding: 10px;
+                                                                display: flex;
+                                                                justify-content: space-around;
+                                                                align-items: left;
+                                                                background-color: transparent;
+                                                            }
+                                                            
+                                                            .navbar>a,
+                                                            .navbar>ul>li>a {
+                                                                display: inline-block;
+                                                                margin-top: -11px;
+                                                                display: inline-block;
+                                                                padding: 1.7rem 1rem !important;
+                                                                outline: none!important;
+                                                                font-size: .9rem;
+                                                                letter-spacing: .1rem;
+                                                                text-transform: uppercase;
+                                                                font-weight: 300;
+                                                                color: #fff;
+                                                            }
+                                                            
+                                                            .navbar #navbar-brand {
+                                                                /* position: relative;
+                position: absolute;
+                top: 12px;
+                left: 15px; */
+                                                                display: inline-block;
+                                                                padding-top: 0.3125rem;
+                                                                padding-bottom: 0.3125rem;
+                                                                font-size: 1.25rem !important;
+                                                                line-height: inherit;
+                                                                white-space: nowrap;
+                                                                text-transform: uppercase;
+                                                                letter-spacing: .2em;
+                                                                font-weight: 400;
+                                                                color: #fff;
+                                                            }
+                                                            
+                                                            .navbar ul li {
+                                                                color: white;
+                                                                display: inline-block;
+                                                            }
+                                                            
+                                                            .navbar a {
+                                                                color: white;
+                                                            }
+                                                            
+                                                            .first-page-input {
+                                                                background-color: transparent;
+                                                                padding-left: 30px;
+                                                                border: none;
+                                                                height: 44px;
+                                                                border-radius: 0;
+                                                                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                                                                color: #fff;
+                                                                outline: none;
+                                                            }
+                                                            
+                                                            .drop-services .dropdown {
+                                                                margin-left: 3px;
+                                                                margin-bottom: 5px;
+                                                                font-size: 0.8em;
+                                                            }
+                                                            
+                                                             ::placeholder {
+                                                                font-family: inherit;
+                                                                letter-spacing: .1em;
+                                                                font-size: 17px;
+                                                                color: rgb(255, 251, 251);
+                                                                opacity: 0.5;
+                                                            }
+                                                            
+                                                            .first-page-content {
+                                                                text-align: center;
+                                                            }
+                                                            
+                                                            .first-page-content h3 {
+                                                                z-index: 1;
+                                                                font-family: 'Roboto Mono', monospace;
+                                                                font-size: 20px;
+                                                                line-height: 1.5;
+                                                                font-weight: 300;
+                                                                color: #fff;
+                                                                padding-top: 20px;
+                                                                margin-block-start: 1em;
+                                                                margin-block-end: 1em;
+                                                                margin-inline-start: 0px;
+                                                                margin-inline-end: 0px;
+                                                            }
+                                                            
+                                                            .first-page-content h1 {
+                                                                font-size: 7rem;
+                                                                color: #fff;
+                                                                line-height: 1.2;
+                                                                font-weight: 700;
+                                                                padding-bottom: 50px;
+                                                                font-family: 'DM Serif Display', serif;
+                                                            }
+                                                            
+                                                            .btn-play {
+                                                                margin-top: 160px;
+                                                                display: inline-block;
+                                                                width: 60px;
+                                                                height: 60px;
+                                                                background: #fff;
+                                                                border-radius: 50%;
+                                                                position: relative;
+                                                                position: absolute;
+                                                                transition: .2s all ease;
+                                                                top: 50%;
+                                                                left: 50%;
+                                                                transform: translate(-50%, -50%);
+                                                            }
+                                                            
+                                                            .btn-play:hover {
+                                                                width: 80px;
+                                                                height: 80px;
+                                                                top: 50%;
+                                                                left: 50%;
+                                                                transform: translate(-50%, -50%);
+                                                            }
+                                                            
+                                                            .dropdown-menu {
+                                                                padding-top: 9px!important;
+                                                                padding-bottom: 9px!important;
+                                                                background-color: white;
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                font-size: 14px;
+                                                                border-radius: 4px;
+                                                                border: none;
+                                                                box-shadow: 0 2px 30px 0 rgb(0 0 0 / 20%);
+                                                                min-width: 13em;
+                                                                position: absolute;
+                                                                top: 70px;
+                                                                right: 610px;
+                                                                visibility: hidden;
+                                                                opacity: 0;
+                                                            }
+                                                            
+                                                            .dropdown-menu a:hover {
+                                                                background-color: #ffc107 !important;
+                                                                transition: all ease-in-out 0.2s;
+                                                            }
+                                                            
+                                                            .dropdown-item {
+                                                                padding-left: 10px!important;
+                                                                padding-top: 6px!important;
+                                                                padding-bottom: 6px!important;
+                                                                text-transform: capitalize!important;
+                                                                color: black!important;
+                                                                display: block;
+                                                                width: 100%;
+                                                                font-weight: 400;
+                                                                color: #212529;
+                                                                white-space: nowrap;
+                                                                background-color: transparent;
+                                                                border: 0;
+                                                            }
+                                                            
+                                                            .drop-services:hover .dropdown-menu {
+                                                                visibility: visible;
+                                                                opacity: 1;
+                                                            }
+                                                            
+                                                            .dropdown-menu :hover {
+                                                                visibility: visible;
+                                                                opacity: 1;
+                                                            }
+                                                            /* end first page */
+                                                            /* start second page */
+                                                            
+                                                            .second-page {
+                                                                margin-top: 150px;
+                                                                background-color: #fff;
+                                                            }
+                                                            
+                                                            .second-page-text {
+                                                                margin: 80px;
+                                                                text-align: center;
+                                                            }
+                                                            
+                                                            .second-page-text h1 {
+                                                                margin-bottom: 1.5rem !important;
+                                                                text-align: center;
+                                                                color: black;
+                                                                line-height: 1.5;
+                                                                font-family: "DM Serif Display", sans-serif;
+                                                                font-size: 2rem;
+                                                                margin-top: 0;
+                                                                font-weight: 300;
+                                                            }
+                                                            
+                                                            .second-page-text p {
+                                                                margin-top: 0;
+                                                                margin-bottom: 1rem;
+                                                                text-align: center!important;
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                font-weight: 400;
+                                                                font-size: .96rem;
+                                                                line-height: 1.8;
+                                                                color: #6c757d;
+                                                            }
+                                                            
+                                                            .second-page-text a {
+                                                                font-weight: 400;
+                                                                font-size: 19px;
+                                                                line-height: 1.8;
+                                                                display: inline-block;
+                                                                color: #ffc107;
+                                                                text-decoration: none;
+                                                                background-color: transparent;
+                                                                text-align: center!important;
+                                                            }
+                                                            
+                                                            .second-page-text a:hover {
+                                                                cursor: pointer;
+                                                                transition: .3s all ease;
+                                                                color: #ba8b00;
+                                                                background-color: transparent;
+                                                            }
+                                                            
+                                                            .second-page-img img {
+                                                                width: 47.2%;
+                                                            }
+                                                            
+                                                            .second-page-img img:first-child {
+                                                                z-index: -1;
+                                                                margin-bottom: 9px;
+                                                                margin-right: 9px;
+                                                                margin-left: 23px;
+                                                            }
+                                                            
+                                                            .second-page-img img:first-child:hover {
+                                                                background: #000;
+                                                            }
+                                                            
+                                                            .second-page-img img:nth-child(2) {
+                                                                margin-right: 23px;
+                                                                margin-bottom: 9px;
+                                                                margin-left: 9px;
+                                                            }
+                                                            
+                                                            .second-page-img img:nth-child(3) {
+                                                                margin-right: 9px;
+                                                                margin-left: 23px;
+                                                            }
+                                                            
+                                                            .second-page-img img:nth-child(4) {
+                                                                margin-right: 23px;
+                                                                margin-left: 9px;
+                                                            }
+                                                            
+                                                            .button2 {
+                                                                display: inline-block;
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                text-transform: uppercase;
+                                                                font-size: 14px;
+                                                                font-weight: bold;
+                                                                border-width: 2px;
+                                                                border-color: #fff;
+                                                                color: #fff;
+                                                                border: 2px solid #fff;
+                                                                border-radius: 0;
+                                                                padding: 10px 20px;
+                                                                color: rgb(255, 255, 255);
+                                                                letter-spacing: .2em;
+                                                                line-height: 1.5;
+                                                                margin-left: 42.2%;
+                                                                margin-top: 56px;
+                                                                transition: all .2s ease-in-out;
+                                                            }
+                                                            
+                                                            .button2:hover {
+                                                                color: #000;
+                                                                background: #fff;
+                                                                border-color: #fff;
+                                                                transition: all .2s ease-in-out;
+                                                            }
+                                                            /* end second page */
+                                                            /* start third page */
+                                                            
+                                                            .third-page {
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                            }
+                                                            
+                                                            .third-page .third-page-img img {
+                                                                margin-left: 120px;
+                                                                height: 682px;
+                                                                width: 540px;
+                                                            }
+                                                            
+                                                            .third-page-text {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                margin-left: 125px;
+                                                            }
+                                                            
+                                                            .third-page-text span {
+                                                                display: block;
+                                                                color: #ffc107!important;
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                font-weight: 400;
+                                                                font-size: .96rem;
+                                                                line-height: 2;
+                                                                text-align: left;
+                                                            }
+                                                            
+                                                            .third-page-text h2 {
+                                                                float: left;
+                                                                font-size: 32px;
+                                                                color: #000;
+                                                                line-height: 1.5;
+                                                                font-family: "DM Serif Display", sans-serif;
+                                                                font-weight: 300;
+                                                            }
+                                                            
+                                                            .third-page-text p {
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                font-weight: 400;
+                                                                font-size: 15px;
+                                                                line-height: 1.8;
+                                                                color: #6c757d;
+                                                            }
+                                                            
+                                                            #text3 {
+                                                                margin-top: 14px;
+                                                            }
+                                                            
+                                                            .third-page-text .button3 {
+                                                                margin-top: 55px;
+                                                            }
+                                                            
+                                                            .third-page-text .button3 a {
+                                                                display: inline-block;
+                                                                text-align: center;
+                                                                white-space: nowrap;
+                                                                line-height: 1.5;
+                                                                border: 2px solid #000;
+                                                                text-transform: uppercase;
+                                                                font-size: 14px;
+                                                                font-weight: bold;
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                letter-spacing: .2em;
+                                                                border-radius: 0;
+                                                                padding: 10px 20px;
+                                                                color: #000;
+                                                                background-color: transparent;
+                                                            }
+                                                            
+                                                            .button3 a:hover {
+                                                                color: #fff;
+                                                                background: #000;
+                                                                border-color: #000;
+                                                            }
+                                                            /* end third page */
+                                                            
+                                                            .third-deneme {
+                                                                position: relative;
+                                                            }
+                                                            
+                                                            .fourth-page2 h1 {
+                                                                text-align: center!important;
+                                                                color: #000;
+                                                                line-height: 1.5;
+                                                                font-weight: 400;
+                                                                font-size: 35px;
+                                                                line-height: 1.8;
+                                                                font-family: "DM Serif Display", sans-serif;
+                                                            }
+                                                            
+                                                            .img .img-fluid {
+                                                                width: 100%;
+                                                            }
+                                                            
+                                                            .img {
+                                                                width: 300px;
+                                                                height: 300px;
+                                                                position: relative;
+                                                                animation: mymove 5s infinite;
+                                                            }
+                                                            
+                                                            @keyframes mymove {
+                                                                from {
+                                                                    top: 850px;
+                                                                    left: 700px;
+                                                                    transition-delay: 2s;
+                                                                }
+                                                                to {
+                                                                    top: 850px;
+                                                                    left: 410px;
+                                                                }
+                                                            }
+                                                            /* <!-- start fourth page --> */
+                                                            
+                                                            .fourth-page1 {
+                                                                margin-top: 265px;
+                                                                margin-bottom: 110px;
+                                                                margin-left: 84px;
+                                                                margin-right: 28px;
+                                                            }
+                                                            
+                                                            .fourth-page {
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                left: 50px;
+                                                                right: 50px;
+                                                                /* margin-left: 20px;
+                                                                margin-right: 20px; */
+                                                            }
+                                                            
+                                                            .fourth-page .section {
+                                                                margin-right: 45px;
+                                                                text-align: left;
+                                                            }
+                                                            
+                                                            .fourth-page .section i {
+                                                                margin-bottom: 22px;
+                                                                font-size: 3rem;
+                                                                color: #ffc107;
+                                                                font-weight: 900;
+                                                            }
+                                                            
+                                                            .fourth-page .section h3 {
+                                                                margin-bottom: 15px;
+                                                                font-size: 1.2rem;
+                                                                font-weight: 400;
+                                                                color: #000;
+                                                                line-height: 1.5;
+                                                                font-family: "DM Serif Display", sans-serif;
+                                                            }
+                                                            
+                                                            .fourth-page .section p {
+                                                                letter-spacing: 0.7px;
+                                                                margin-top: 0;
+                                                                margin-bottom: 1rem;
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                font-weight: 400;
+                                                                font-size: .96rem;
+                                                                line-height: 1.8;
+                                                                color: #6c757d;
+                                                            }
+                                                            
+                                                            .fourth-page2 h1 {
+                                                                text-align: center;
+                                                            }
+                                                            
+                                                            .fourth-page {
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                margin-top: 100px;
+                                                                ;
+                                                            }
+                                                            
+                                                            .melumat {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                margin-top: 40px;
+                                                                margin-left: 30px;
+                                                            }
+                                                            
+                                                            .melumat h1 {
+                                                                line-height: 1.5;
+                                                                margin: 0;
+                                                                padding: 0;
+                                                                font-size: 18px;
+                                                                font-weight: 300;
+                                                            }
+                                                            
+                                                            .melumat h3 {
+                                                                color: #a6a6a6;
+                                                            }
+                                                            
+                                                            .fourth-page-text p {
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                font-weight: 400;
+                                                                line-height: 1.8;
+                                                                font-size: 16px;
+                                                                color: #6c757d;
+                                                            }
+                                                            
+                                                            .melumat-esas {
+                                                                margin-left: 50px!important;
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                            }
+                                                            
+                                                            .h11 {
+                                                                margin-left: 50px;
+                                                            }
+                                                            
+                                                            .fourth-page .fourth-page-content-1 img {
+                                                                max-width: 20%;
+                                                                border-radius: 50%;
+                                                                border: 5px solid #fff;
+                                                            }
+                                                            
+                                                            .fourth-page-content-1 {
+                                                                width: 550px;
+                                                                margin-right: 50px;
+                                                            }
+                                                            
+                                                            .point {
+                                                                margin-left: 48%;
+                                                                width: 10px;
+                                                                height: 10px;
+                                                                background-color: #ffc107;
+                                                                border-radius: 100%;
+                                                            }
+                                                            
+                                                            .point1 {
+                                                                margin-left: 47%;
+                                                                margin-top: -10px;
+                                                                width: 10px;
+                                                                height: 10px;
+                                                                background-color: gray;
+                                                                border-radius: 100%;
+                                                            }
+                                                            /* <!-- end fourth page -->  */
+                                                            /* <!-- start fifth page --> */
+                                                            
+                                                            .fifth-page {
+                                                                padding-top: 50px;
+                                                                height: 240px;
+                                                                background-color: #FFC107;
+                                                                margin-top: 100px;
+                                                            }
+                                                            
+                                                            .fifth-page a {
+                                                                margin-left: 43%;
+                                                                display: inline-block;
+                                                                text-align: center;
+                                                                white-space: nowrap;
+                                                                line-height: 1.5;
+                                                                border: 2px solid #fff;
+                                                                text-transform: uppercase;
+                                                                font-size: 14px;
+                                                                font-weight: bold;
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                letter-spacing: .2em;
+                                                                border-radius: 0;
+                                                                padding: 15px 25px;
+                                                                color: #fff;
+                                                                background-color: transparent;
+                                                            }
+                                                            
+                                                            .fifth-page a:hover {
+                                                                transition: all .5s ease-in-out;
+                                                                color: #000;
+                                                                background: #fff;
+                                                                border-color: #fff
+                                                            }
+                                                            
+                                                            .fifth-page h1 {
+                                                                text-align: center;
+                                                                font-size: 1.75rem;
+                                                                color: #fff;
+                                                                line-height: 1.5;
+                                                                font-family: "DM Serif Display", sans-serif;
+                                                            }
+                                                            
+                                                            .fifth-page p {
+                                                                margin-bottom: 20px;
+                                                                text-align: center;
+                                                                color: #fff;
+                                                                margin-bottom: 1.5rem!important;
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                font-weight: 400;
+                                                                font-size: .96rem;
+                                                                line-height: 1.8;
+                                                            }
+                                                            
+                                                            .footer {
+                                                                background-color: #FFC809;
+                                                                padding-top: 100px;
+                                                                padding-right: 100px;
+                                                                padding-left: 100px;
+                                                                display: flex;
+                                                                justify-content: space-evenly;
+                                                            }
+                                                            
+                                                            .footer h3 {
+                                                                font-size: 18px;
+                                                                margin-bottom: 25px;
+                                                                letter-spacing: .1em;
+                                                                font-weight: bold;
+                                                                color: #000;
+                                                                line-height: 1.5;
+                                                                font-family: "DM Serif Display", sans-serif;
+                                                            }
+                                                            
+                                                            .about p {
+                                                                color: #000;
+                                                                margin-bottom: 3rem!important;
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                font-weight: 400;
+                                                                font-size: .96rem;
+                                                                line-height: 1.8;
+                                                            }
+                                                            
+                                                            .contact h5 {
+                                                                color: #000;
+                                                                margin-bottom: 3rem!important;
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                font-weight: 400;
+                                                                font-size: .96rem;
+                                                                line-height: 1.8;
+                                                            }
+                                                            
+                                                            .links {
+                                                                display: inline-block;
+                                                            }
+                                                            
+                                                            .links a {
+                                                                color: black;
+                                                                text-decoration: underline;
+                                                                margin-bottom: 50px !important;
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                font-weight: 400;
+                                                                font-size: .96rem;
+                                                                line-height: 1.8;
+                                                            }
+                                                            
+                                                            .a1 {
+                                                                font-size: 12px;
+                                                                font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                                                                line-height: 1.8;
+                                                                background-color: #FFC809;
+                                                                text-align: center;
+                                                                font-weight: 400;
+                                                                color: black;
+                                                            }
+                                                            
+                                                            .a1 a {
+                                                                font-size: 12px;
+                                                                text-decoration: underline;
+                                                                background-color: #FFC809;
+                                                                text-align: center;
+                                                                font-weight: 400;
+                                                                color: black;
+                                                            }
+                                                            /* <!-- end fifth page --> */
